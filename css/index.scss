@@ -320,18 +320,33 @@ body {
             }
 
             //modal section
-            .modal-body-container {
-                text-align: center;
-                height: 400px;
-                .container-fluid {
-                    div {
-                        button {
-                            position: relative;
-                            margin: 0 auto;
+            .modal-content {
+                background-color: rgba(255, 255, 255, 0.9);
+                border-radius: 10px;
+                .modal-body-container {
+                    text-align: center;
+                    height: 400px;
+                    
+                    .container-fluid {
+                        .border-line {
+                            border-bottom: 1px solid #bbb;
+                        }
+                        div {
+                            .font-style {
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                font-size: 1.1rem;
+                            }
+                            button {
+                                position: relative;
+                                margin: 0 auto;
+                                padding: 10px 40px;
+                            }
                         }
                     }
                 }
             }
+            
             
             .second-section-container {
                 @include margin-padding-zero;

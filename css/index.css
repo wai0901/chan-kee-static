@@ -411,14 +411,30 @@ body .container .body-section-container .body-main-container .body-main .body-co
   width: 100%;
 }
 
-body .container .body-section-container .modal-body-container {
+body .container .body-section-container .modal-content {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+body .container .body-section-container .modal-content .modal-body-container {
   text-align: center;
   height: 400px;
 }
 
-body .container .body-section-container .modal-body-container .container-fluid div button {
+body .container .body-section-container .modal-content .modal-body-container .container-fluid .border-line {
+  border-bottom: 1px solid #bbb;
+}
+
+body .container .body-section-container .modal-content .modal-body-container .container-fluid div .font-style {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+body .container .body-section-container .modal-content .modal-body-container .container-fluid div button {
   position: relative;
   margin: 0 auto;
+  padding: 10px 40px;
 }
 
 body .container .body-section-container .second-section-container {

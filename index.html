@@ -58,7 +58,10 @@
                   class="navbar-nav mt-md-3 mt-5 mb-md-0 mb-5 mx-auto text-md-center text-left"
                 >
                   <li class="nav-item header-links">
-                    <a class="nav-link" href="order">order</a>
+                    <a class="nav-link" href=""
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                    >order</a>
                   </li>
                   <li class="nav-item header-links">
                     <a class="nav-link" href="#">menu</a>
@@ -171,26 +174,49 @@
         >
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
-                
                 <div class="modal-body modal-body-container">
                     <div class="container-fluid">
                         <div class="row">
-                            <p class="col">pickup at store</p>
+                            <p class="col mt-4 font-style">pickup at store</p>
                         </div>
-                        <div class="row">
-                            <button class="btn btn-primary btn-lg">order pickup</button>
+                        <div class="row pb-4 border-line">
+                            <button class="btn btn-danger btn-lg font-style">order pickup</button>
                         </div>
-                        <div class="row">
-                            <p class="col">delevery:</p>
+                        <div class="row mt-5">
+                            <p class="col font-style">delvery:</p>
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <div class="col">Uber</div>
-                                <div class="col">DoorDash</div>
+                                <div class="col mt-1">
+                                    <a href="">
+                                        <svg width="150px" height="30px" href="#">
+                                            <image xlink:href="img/UBE_001_Logo.svg" x="0" y="0" width="150px" height="30px"></image>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col mt-5">
+                                    <a href="">
+                                        <svg width="150px" height="20px" href="#">
+                                            <image xlink:href="img/DoorDash_Logo.svg" x="0" y="0" width="150px" height="20px"></image>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                             <div class="col-6">
-                                <div class="col">Grubhub</div>
-                                <div class="col">Yamimeal</div>
+                                <div class="col mt-1">
+                                    <a href="">
+                                        <svg width="140px" height="40px" href="#">
+                                            <image xlink:href="img/grubhub-logo.svg" x="0" y="0" width="140px" height="40px"></image>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col mt-4">
+                                    <a href="">
+                                        <svg width="150px" height="40px" href="#">
+                                            <image xlink:href="img/yamimeal.svg" x="0" y="0" width="150px" height="40px"></image>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                   </div>
@@ -248,7 +274,10 @@
         <!-- Footer -->
         <div class="row footer">
           <div class="col-4 footer-contents">
-            <button>ORDER NOW</button>
+            <button
+                data-toggle="modal"
+                data-target="#exampleModal"
+            >ORDER NOW</button>
           </div>
           <div class="col-4 footer-contents copyright">
             <p>COPYRIGHT@CHANKEE 2020</p>
