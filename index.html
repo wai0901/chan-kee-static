@@ -58,13 +58,16 @@
                   class="navbar-nav mt-md-3 mt-5 mb-md-0 mb-5 mx-auto text-md-center text-left"
                 >
                   <li class="nav-item header-links">
-                    <a class="nav-link" href=""
-                        data-toggle="modal"
-                        data-target="#exampleModal"
-                    >order</a>
+                    <a
+                      class="nav-link"
+                      href=""
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      >order</a
+                    >
                   </li>
                   <li class="nav-item header-links">
-                    <a class="nav-link" href="#">menu</a>
+                    <a class="nav-link" href="menu.html">menu</a>
                   </li>
                   <li class="nav-item header-links">
                     <a class="nav-link" href="#">location</a>
@@ -114,7 +117,7 @@
 
             <!-- the slogan contents -->
             <div class="row body-slogan-container">
-              <div class="col-lg-5 col-4 slogan-left">
+              <div class="col-lg-5 col-sm-4 col-1 slogon">
                 <svg width="95px" height="330px" href="#">
                   <image
                     xlink:href="img/slogon_left.svg"
@@ -125,7 +128,7 @@
                   ></image>
                 </svg>
               </div>
-              <div class="col-lg-2 col-4 logo">
+              <div class="col-lg-2 col-sm-4 col-10 logo">
                 <svg width="195px" height="200px" href="#">
                   <image
                     xlink:href="img/chan_kee_body_logo.svg"
@@ -136,7 +139,7 @@
                   ></image>
                 </svg>
               </div>
-              <div class="col-lg-5 col-4 slogan-right">
+              <div class="col-lg-5 col-sm-4 col-1 slogon">
                 <svg width="95px" height="330px" href="#">
                   <image
                     xlink:href="img/slogon_right.svg"
@@ -151,13 +154,15 @@
 
             <!-- order button -->
             <div class="row order-button">
-              <button 
+              <button
                 class="col-2"
                 style="outline: none;"
                 type="button"
                 data-toggle="modal"
                 data-target="#exampleModal"
-              >ORDER NOW</button>
+              >
+                ORDER NOW
+              </button>
             </div>
           </div>
         </div>
@@ -165,124 +170,216 @@
 
         <!-- Modal -->
         <div
-            class="modal fade modal-container"
-            id="exampleModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
+          class="modal fade modal-container"
+          id="exampleModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
         >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-body modal-body-container">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <p class="col mt-4 font-style">pickup at store</p>
-                        </div>
-                        <div class="row pb-4 border-line">
-                            <button class="btn btn-danger btn-lg font-style">order pickup</button>
-                        </div>
-                        <div class="row mt-5">
-                            <p class="col font-style">delvery:</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="col mt-1">
-                                    <a href="">
-                                        <svg width="150px" height="30px" href="#">
-                                            <image xlink:href="img/UBE_001_Logo.svg" x="0" y="0" width="150px" height="30px"></image>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="col mt-5">
-                                    <a href="">
-                                        <svg width="150px" height="20px" href="#">
-                                            <image xlink:href="img/DoorDash_Logo.svg" x="0" y="0" width="150px" height="20px"></image>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="col mt-1">
-                                    <a href="">
-                                        <svg width="140px" height="40px" href="#">
-                                            <image xlink:href="img/grubhub-logo.svg" x="0" y="0" width="140px" height="40px"></image>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="col mt-4">
-                                    <a href="">
-                                        <svg width="150px" height="40px" href="#">
-                                            <image xlink:href="img/yamimeal.svg" x="0" y="0" width="150px" height="40px"></image>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body modal-body-container">
+                <div class="container-fluid">
+                  <div class="row">
+                    <p class="col mt-4 mb-3 font-style">PICKUP AT STORE</p>
+                  </div>
+                  <div class="row pb-5 border-line">
+                    <a href="https://the.ordering.app/" target="_blank">
+                      <button class="btn btn-danger btn-lg font-style">
+                        ORDER PICKUP
+                      </button>
+                    </a>
+                  </div>
+                  <div class="row mt-5">
+                    <p class="col font-style">DELIVERY:</p>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="col mt-5 mt-md-3">
+                        <a href="https://www.ubereats.com/" target="_blank">
+                          <svg width="150px" height="30px">
+                            <image
+                              xlink:href="img/UBE_001_Logo.svg"
+                              x="0"
+                              y="0"
+                              width="150px"
+                              height="30px"
+                            ></image>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col mt-5 mt-md-5">
+                        <a href="https://www.doordash.com/" target="_blank">
+                          <svg width="150px" height="20px">
+                            <image
+                              xlink:href="img/DoorDash_Logo.svg"
+                              x="0"
+                              y="0"
+                              width="150px"
+                              height="20px"
+                            ></image>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="col mt-5 mt-md-3">
+                        <a href="https://www.grubhub.com/" target="_blank">
+                          <svg width="140px" height="40px">
+                            <image
+                              xlink:href="img/grubhub-logo.svg"
+                              x="0"
+                              y="0"
+                              width="140px"
+                              height="40px"
+                            ></image>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col mt-5 mt-md-4 mb-2">
+                        <a href="https://www.yamimeal.com/" target="_blank">
+                          <svg width="150px" height="40px">
+                            <image
+                              xlink:href="img/yamimeal.svg"
+                              x="0"
+                              y="0"
+                              width="150px"
+                              height="40px"
+                            ></image>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                
               </div>
             </div>
-        </div>  
-        
-        
-        <!-- 2nd section -->
-        <div class="row second-section-container">
-          <div class="col-7 second-section-text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero
-              volutpat sed cras ornare arcu. In hac habitasse platea dictumst.
-              Id leo in vitae turpis massa sed. Interdum consectetur libero id
-              faucibus nisl tincidunt eget nullam. Cursus euismod quis viverra
-              nibh cras pulvinar mattis. Ultricies mi eget mauris pharetra et.
-              Ullamcorper eget nulla facilisi etiam dignissim. Volutpat odio
-              facilisis mauris sit amet massa vitae tortor condimentum. Semper
-              quis lectus nulla at. Eget lorem dolor sed viverra ipsum nunc
-              aliquet bibendum. Pharetra diam sit amet nisl. Nunc aliquet
-              bibendum enim facilisis gravida neque. In mollis nunc sed id
-              semper risus in. Natoque penatibus et magnis dis parturient
-              montes.
-            </p>
           </div>
-          <div class="col-5 second-section-image"></div>
+        </div>
+
+        <!-- 2nd section -->
+        <div class="row intro-section-container">
+          <div class="col-xs-12 col-md-7 order-md-1 intro-text second-fourth-text">
+            <div class="intro">
+              <h3>The History of Congee</h3>
+              <p class="text">
+                Congee (粥 pronounced: zhou /zhōu), also known as Congee or rice
+                porridge is a traditional Chinese food staple, with a long and
+                glorious history. First enjoyed by Emperors; pottery created to
+                prepare Congee dates back to the Neolithic Age (2,300 BC) based
+                on relics uncovered in the Longshan Cultural Site
+                (龍山文化遺址). This shows that the Chinese have been cooking
+                and enjoying Congee for thousands of years.
+              </p>
+              <p class="text">
+                Because of its easily digestible nature and neutral
+                propensities, Congee was often consumed by ancient Chinese as a
+                means of wellness. History books often detail instances where
+                Congee was paired with other ingredients to form a healing
+                ailment, similar to Chinese medicine.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-5 order-md-2 section-image-container">
+            <div class="second-section-image"></div>
+          </div>
         </div>
 
         <!-- 3rd section -->
-        <div class="row third-section-container">
-          <div class="col-7 third-section-text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero
-              volutpat sed cras ornare arcu. In hac habitasse platea dictumst.
-              Id leo in vitae turpis massa sed. Interdum consectetur libero id
-              faucibus nisl tincidunt eget nullam. Cursus euismod quis viverra
-              nibh cras pulvinar mattis. Ultricies mi eget mauris pharetra et.
-              Ullamcorper eget nulla facilisi etiam dignissim. Volutpat odio
-              facilisis mauris sit amet massa vitae tortor condimentum. Semper
-              quis lectus nulla at. Eget lorem dolor sed viverra ipsum nunc
-              aliquet bibendum. Pharetra diam sit amet nisl. Nunc aliquet
-              bibendum enim facilisis gravida neque. In mollis nunc sed id
-              semper risus in. Natoque penatibus et magnis dis parturient
-              montes.
-            </p>
+        <div class="row intro-section-container">
+          <div class="col-xs-12 col-md-5 order-4 order-md-3 section-image-container">
+            <div class="third-section-image"></div>
           </div>
-          <div class="col-5 third-section-image"></div>
+          <div class="col-xs-12 col-md-7 order-3 order-md-4 intro-text third-fifth-text">
+            <div class="intro">
+              <p class="text">
+                In the Wei, Jin, Southern and Northern Dynasties; to escape war,
+                people from the Central Plain (中原) region of China migrated to
+                the south, bringing with them the tradition of preparing and
+                enjoying Congee. Along with them they also brought their farming
+                and agriculture techniques, which were lacking in the south. In
+                this period, Congee gained popularity as a means to “stretch
+                rice” to feed the growing migrant population.
+              </p>
+              <p class="text">
+                However, after the Song Dynasty, Congee was no longer seen as a
+                relief or charity food. Many prominent scholars and poets at the
+                time were big fans of Congee. For example, renowned poet Lu You
+                (陸游) wrote the following poem to celebrate Congee:
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4th section -->
+        <div class="row intro-section-container">
+          <div class="col-xs-12 col-md-7 order-md-5 intro-text second-fourth-text">
+            <div class="intro">
+              <p class="text">
+                <span
+                  >“Common folk all seek long life;<br />
+                  not realizing what’s before their eyes.<br />
+                  I abide by this simple rule ~<br />
+                  Congee leads to divine.”</span
+                ><br />
+              </p>
+              <p class="text">
+                A review of the historical cookbooks and Chinese medicine
+                textbooks from the Ming and Qing dynasties reveal more than 300+
+                Congee recipes!<br />
+                <a href="http://www.mychistory.com/2-1012/"
+                  >Click here for more information</a
+                >
+                <br />
+                This is a testament to the popularity, variety and health
+                benefits of Congee ~ truly a dish created for royalty, grew out
+                of necessity and ultimately celebrated and enjoyed by everyone.
+              </p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-5 order-md-6 section-image-container">
+            <div class="fourth-section-image"></div>
+          </div>
+        </div>
+
+        <!-- 5rd section -->
+        <div class="row intro-section-container">
+          <div class="col-xs-12 col-md-5 order-md-6 section-image-container">
+            <div class="fifth-section-image"></div>
+          </div>
+          <div class="col-md-7 order-md-7 intro-text third-fifth-text">
+            <div class="intro">
+              <p class="text">
+                In the Wei, Jin, Southern and Northern Dynasties; to escape war,
+                people from the Central Plain (中原) region of China migrated to
+                the south, bringing with them the tradition of preparing and
+                enjoying Congee. Along with them they also brought their farming
+                and agriculture techniques, which were lacking in the south. In
+                this period, Congee gained popularity as a means to “stretch
+                rice” to feed the growing migrant population.
+              </p>
+              <p class="text">
+                However, after the Song Dynasty, Congee was no longer seen as a
+                relief or charity food. Many prominent scholars and poets at the
+                time were big fans of Congee. For example, renowned poet Lu You
+                (陸游) wrote the following poem to celebrate Congee:
+              </p>
+            </div>
+          </div>
         </div>
 
         <!-- Footer -->
         <div class="row footer">
-          <div class="col-4 footer-contents">
-            <button
-                data-toggle="modal"
-                data-target="#exampleModal"
-            >ORDER NOW</button>
+          <div class="col-md-4 order-md-1 order-1 footer-contents">
+            <button data-toggle="modal" data-target="#exampleModal">
+              ORDER NOW
+            </button>
           </div>
-          <div class="col-4 footer-contents copyright">
+          <div class="col-md-4 order-md-2 order-3 footer-contents copyright">
             <p>COPYRIGHT@CHANKEE 2020</p>
           </div>
-          <div class="col-4 footer-contents social-icons">
+          <div class="col-md-4 order-md-3 order-2 footer-contents social-icons">
             <div>
               <a href="#"><i class="fab fa-facebook-square"></i></a>
               <a href="#"><i class="fab fa-instagram-square"></i></a>

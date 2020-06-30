@@ -1,0 +1,443 @@
+$langButtonBackground: #8D392F;
+$langButtonBackgroundHover: #65261E;
+$langButtonText: #fff;
+$orderButtonBackground: #ffc609;
+$orderButtonBackgroundHover: #ce9f06;
+$orderButtonText: #3a3a3a;
+$headerMenuLink: #3a3a3a;
+$headerMenuLinkHover: #8D392F;
+$socialIconsButton: #3a3a3a;
+$socialIconsButtonHover: #6e6e6e;
+$bugerMenuColor: #8D392F;
+
+
+@mixin background-cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin margin-padding-zero {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    box-sizing: border-box;
+    @include margin-padding-zero;
+    background-image: url("../img/chinese-wallpa.png");
+    background-repeat: repeat;
+    font-family: 'Hind Madurai', sans-serif;
+    .container {
+        height: 100vh;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0;
+        .header-container {
+            position: fixed;
+            width: 100%;
+            z-index: 3;
+            .header {
+                position: relative;
+                max-width: 1280px;
+                .background-image {
+                    min-height: 110px;
+                    background: no-repeat url('../img/header-background.png');
+                    background-size: cover;
+                    .header-navbar {
+                        @include margin-padding-zero;
+                        button {
+                            // margin: 35px 0 0 10px;
+                            border: none;
+                            outline: none !important;
+                        }
+                        .burger-menu:active {
+                            top: 3px;
+                        }
+                        .burger-menu {
+                            height: 30px;
+                            width: 40px;
+                            position: relative;
+                            left: 10px;
+                            top: 0px;
+                            @include margin-padding-zero;
+                            list-style: none;
+                            cursor: pointer;
+                            z-index: 4;
+                            .burger-line {
+                                position: absolute;
+                                height: 5px;
+                                width: 40px;
+                                background-color: $bugerMenuColor;
+                                transition: ease-in-out 0.2s;
+                                border-radius: 10px;
+                                transform: translate(0, -50%);
+                            }
+                            .burger-line-one {
+                                top: 0;
+                            }
+                            .burger-line-two {
+                                top: 10px;
+                                opacity: 1;
+                            }
+                            .burger-line-three {
+                                top: 20px;
+                            }
+                        }
+                        .burger-menu-open {
+                            .burger-line-one {
+                                animation: buger-top 0.3s  0.2s  forwards;
+                            }
+                            .burger-line-two {
+                                opacity: 0;
+                            }
+                            .burger-line-three {
+                                animation: buger-bottom 0.3s  0.2s  forwards;
+                            }
+                            @keyframes buger-top {
+                                0% {top: 0px;}
+                                50% {top: 10px; transform: rotate(0deg)}
+                                100% {top: 10px; transform: rotate(45deg);}
+                            }
+                            @keyframes buger-bottom {
+                                0% {top: 20px;}
+                                50% {top: 10px; transform: rotate(0deg)}
+                                100% {top: 10px; transform: rotate(-45deg);}
+                            }
+                        }
+                        // .header-links {
+                        //     margin: 20px 20px;
+                        //     .nav-link {
+                        //         font-size: 0.9rem;
+                        //         font-weight: bold;
+                        //         color: $headerMenuLink;
+                        //         text-transform: uppercase;
+                        //     }
+                        // }
+                        .header-links {
+                            display:inline-block;
+                            margin: 20px 20px;
+                        }
+                        .header-links a {
+                            padding:10px 0 5px;
+                            font-size: 0.9rem;
+                            font-weight: bold;
+                            max-width: 90px;
+                            // display:block;
+                            text-transform: uppercase;
+                            color: $headerMenuLink;
+                            position:relative;
+                        }
+                        .header-links a:hover {
+                            color: $headerMenuLinkHover;
+                        }
+                        @mixin underLineEffect {
+                            content:'';
+                            width: 0%;
+                            transition: all 0.2s ease;
+                            left: 50%;
+                        }
+                        @mixin underLineEffectHover {
+                            content:'';
+                            position: absolute;
+                            bottom: 0px;
+                            background:#8D392F;
+                            height: 2px;
+                            width: 50%;
+                        }
+                        .header-links a:after{
+                            @include underLineEffect;
+                        }
+                        .header-links a:before{
+                            @include underLineEffect;
+                        }
+                        .header-links a:hover:after{
+                            left:50%;
+                            @include underLineEffectHover
+                        }
+                        .header-links a:hover:before{
+                            left:0px;
+                            @include underLineEffectHover
+                        }
+                    }
+                    .header-logo {
+                        position: absolute;
+                        margin-left: 100px;
+                        top: 25px;
+                
+                    }
+                
+                    .lang-button {
+                        position: absolute;
+                        top: 40px;
+                        right: 90px;
+                        cursor: pointer;
+                        p {
+                            margin-top: 5px;
+                            font-weight: bold;
+                            color: $headerMenuLink;
+                        }
+                        button {
+                            margin: 0;
+                            min-width: 80px;
+                            padding: 8px 0;
+                            text-decoration: none;
+                            outline: none;
+                            border-radius: 6px;
+                            border: none;
+                            background-color: $langButtonBackground;
+                            color: $langButtonText;
+                            font-size: 0.9rem;
+                            font-weight: bold;
+                            font-family: 'Noto Sans TC', sans-serif;
+                            
+                        }
+                        button:hover {
+                            background-color: $langButtonBackgroundHover;
+                        }
+                    }
+    
+                    @media screen and (max-width: 767px) {
+                        .header-navbar {
+                            .header-links {
+                                a {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                        .header-logo {
+                            margin: 0;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                        }
+                        .lang-button {
+                            right: 15px;
+                        }
+                    }
+                }
+                
+            }        
+        }
+
+        //modal section
+        .modal-content {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            .modal-body-container {
+                text-align: center;
+                min-height: 400px;
+                
+                .container-fluid {
+                    .border-line {
+                        border-bottom: 1px solid #bbb;
+                    }
+                    div {
+                        .font-style {
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            font-size: 1.1rem;
+                        }
+                        p {
+                            margin: 0;;
+                        }
+                        a {
+                            position: relative;
+                            margin: 0 auto;
+                            button {
+                                padding: 10px 40px;
+                            }
+                        }   
+                    }
+                }
+            }
+        }
+        
+        
+        .menu-container {
+            @include margin-padding-zero;
+            height: 950px;
+            background-color: #fff;
+            z-index: 1;
+            .menu-text {
+                @include margin-padding-zero;
+                height: 100%;
+                min-height: 950px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .top-spacer {
+                    top: 50px;
+                }
+                .menu {
+                    position: relative;
+                    width: 60%;
+                    line-height: 2rem;
+                    li {
+                        padding: 3px 0;
+                    }
+                }
+                .dinner-Combo-menu {
+                    width: 70%;
+                    line-height: 2rem;
+                    li {
+                        padding: 0 ;
+                    }
+                }
+                @media screen and (max-width: 1200px) {
+                    .menu {
+                        font-size: 0.9rem;
+                        line-height: 1.8rem;
+                    }
+                }
+            }
+            .menu-image-container {
+                @include margin-padding-zero;
+                height: 100%;
+                max-width: 640px;
+                div {
+                    height: 100%;
+                    width: 100%;
+                }
+                .first-menu-image {
+                    position: relative;
+                    right: 0;
+                    background: no-repeat url('../img/menu_2_sq.jpg') 100% 100% fixed;
+                    background-size: fill;
+                }
+                .second-menu-image {
+
+                    background: no-repeat url('../img/menu_1_sq.jpg') 0% 100% fixed;
+                    background-size: fill;
+                }
+                .third-menu-image {
+
+                    background: no-repeat url('../img/menu_3_sq.jpg') 100% 100% fixed;
+                    background-size: fill;
+                }
+                .fourth-menu-image {
+
+                    background: no-repeat url('../img/menu_5_sq.jpg') 0% 100% fixed;
+                    background-size: fill;
+                }
+                .fifth-menu-image {
+
+                    background: no-repeat url('../img/menu_4_sq.jpg') 100% 100% fixed;
+                    background-size: fill;
+                }
+            }
+        }
+        // @media screen and (max-width: 992px) {
+        //     .menu-container { 
+        //         .menu-text {
+        //         }
+        //         .menu-image-container {
+        //             max-height: 350px;
+        //             min-width: 100%;
+        //             .first-menu-image {
+        //                 background: no-repeat url('../img/menu_2_sq.jpg') center;
+        //                 background-size: cover;
+        //             }
+        //             .second-menu-image {
+    
+        //                 background: no-repeat url('../img/menu_1_sq.jpg') center;
+        //                 background-size: cover;
+        //             }
+        //             .third-menu-image {
+    
+        //                 background: no-repeat url('../img/menu_3_sq.jpg') center;
+        //                 background-size: cover;
+        //             }
+        //             .fourth-menu-image {
+    
+        //                 background: no-repeat url('../img/menu_5_sq.jpg') center;
+        //                 background-size: cover;
+        //             }
+        //             .fifth-menu-image {
+    
+        //                 background: no-repeat url('../img/menu_4_sq.jpg') center;
+        //                 background-size: cover;
+        //             }
+        //         }
+        //     }
+            
+        // }
+
+        .footer {
+            position: relative;
+            bottom: 0;
+            @include margin-padding-zero;
+            min-height: 150px;
+            max-width: 1280px;
+            background: no-repeat url('../img/footer-background.png');
+            background-size: cover;
+            .footer-contents {
+                width: 100%;
+                @include margin-padding-zero;
+                button {
+                    margin: 20px 0 0 100px;
+                    padding: 8px 60px;
+                    text-decoration: none;
+                    outline: none;
+                    border-radius: 6px;
+                    border: none;
+                    background-color: $langButtonBackground;
+                    color: $langButtonText;
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                }
+                button:hover {
+                    background-color: $langButtonBackgroundHover;
+                }
+                p {
+                    margin-top: 100px;
+                    font-size: 0.9rem;
+                }
+                a {
+                    font-size: 1.5rem;
+                    list-style: none;
+                    margin: 0 10px;
+                    color: $socialIconsButton;
+                }
+                a:hover {
+                    color: $socialIconsButtonHover;
+                }
+            }
+            .copyright {
+                text-align: center;
+            }
+            .social-icons {
+                margin: 20px 0;
+                div {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 100px;
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .footer {
+                .footer-contents {
+                    text-align: center;
+                    button {
+                        margin: 20px 0;
+                    }
+                }
+                .social-icons {
+                    width: 80px;
+                    position: relative;
+                    margin: 20px auto;
+                    div {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chan Kee</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;600;700&family=Noto+Sans+TC:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/menu.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <section class="header-container">
+        <div class="header">
+          <div class="background-image">
+            <nav
+              class="header-navbar navbar navbar-light navbar-expand-md justify-content-md-center justify-content-start"
+            >
+              <!-- Burger menu icon-->
+              <button
+                class="navbar-toggler mt-5"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <ul id="burger-menu" class="burger-menu">
+                  <li class="burger-line burger-line-one"></li>
+                  <li class="burger-line burger-line-two"></li>
+                  <li class="burger-line burger-line-three"></li>
+                </ul>
+              </button>
+
+              <!-- Navbar links -->
+              <div
+                class="collapse navbar-collapse justify-content-between align-items-center w-100"
+                id="navbarNav"
+              >
+                <ul
+                  class="navbar-nav mt-md-3 mt-5 mb-md-0 mb-5 mx-auto text-md-center text-left"
+                >
+                  <li class="nav-item header-links">
+                    <a class="nav-link" href=""
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                    >order</a>
+                  </li>
+                  <li class="nav-item header-links">
+                    <a class="nav-link" href="#">menu</a>
+                  </li>
+                  <li class="nav-item header-links">
+                    <a class="nav-link" href="#">location</a>
+                  </li>
+                  <li class="nav-item header-links">
+                    <a class="nav-link" href="#">about</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <!-- Chan Kee logo -->
+            <div class="header-logo">
+              <a href="/">
+                <svg width="56px" height="58px" href="#">
+                  <image
+                    xlink:href="img/chan_kee_header_logo.svg"
+                    x="0"
+                    y="0"
+                    width="56px"
+                    height="58px"
+                  ></image>
+                </svg>
+              </a>
+            </div>
+
+            <!-- language button -->
+            <div class="lang-button">
+              <button>中文</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <-- header-container -->
+
+        <!-- Modal -->
+        <div
+            class="modal fade modal-container"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body modal-body-container">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <p class="col mt-4 mb-3 font-style">PICKUP AT STORE</p>
+                        </div>
+                        <div class="row pb-5 border-line">
+                            <a href="https://the.ordering.app/" target="_blank">
+                                <button class="btn btn-danger btn-lg font-style">ORDER PICKUP</button>
+                            </a>
+                        </div>
+                        <div class="row mt-5">
+                            <p class="col font-style">DELIVERY:</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="col mt-5 mt-md-3">
+                                    <a href="">
+                                        <svg width="150px" height="30px">
+                                            <image xlink:href="img/UBE_001_Logo.svg" x="0" y="0" width="150px" height="30px"></image>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col mt-5 mt-md-5">
+                                    <a href="https://www.doordash.com/" target="_blank">
+                                        <svg width="150px" height="20px">
+                                            <image xlink:href="img/DoorDash_Logo.svg" x="0" y="0" width="150px" height="20px"></image>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="col mt-5 mt-md-3">
+                                    <a href="https://www.grubhub.com/" target="_blank">
+                                        <svg width="140px" height="40px">
+                                            <image xlink:href="img/grubhub-logo.svg" x="0" y="0" width="140px" height="40px"></image>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="col mt-5 mt-md-4 mb-2">
+                                    <a href="https://www.yamimeal.com/" target="_blank">
+                                        <svg width="150px" height="40px">
+                                            <image xlink:href="img/yamimeal.svg" x="0" y="0" width="150px" height="40px"></image>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>  
+        
+        <!-- menu section -->
+        <div class="row menu-container">
+            <div class="col-lg-6  menu-text">
+                <div class="menu top-spacer">
+                    <h3>Appetizers</h3>
+                    <ul>
+                        <li>Chinese Donut</li>
+                        <li>Ox Tongue Pastry (Sweet)</li>
+                        <li>Plain Rice Roll</li>
+                        <li>Rice Roll with Chinese Donut</li>
+                        <li>Rice Roll with Dried Shrimp</li>
+                        <li>Fish Shumai</li>
+                        <li>Sticky Rice Dumpling in Bamboo Leaves</li>
+                        <li>Deep Fried Chicken Wings</li>
+                        <li>Fried Wonton</li>
+                        <li>Beef Tripe with Ginger and Scallion</li>
+                        <li>Broiled Sliced Beef</li>
+                        <li>Soy Sauce Chow Mein</li>
+                        <li>Beef Chow Fun(Flat Noodles)</li>
+                        <li>Extra Steam Rice</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6  menu-image-container">
+                <div class="first-menu-image"></div>
+            </div>
+        </div>
+
+        <div class="row menu-container">
+            <div class="col-lg-6  menu-image-container">
+                <div class="second-menu-image"></div>
+            </div>
+            <div class="col-lg-6 menu-text">
+                <div class="menu">
+                    <h3>Porridge</h3>
+                    <ul>
+                        <li>Thousand Year Egg and Pork Porridge</li>
+                        <li>House Special Porridge</li>
+                        <li>Beef Porridge</li>
+                        <li>Minced Beef Porridge</li>
+                        <li>Fish Porridge</li>
+                        <li>Seafood Porridge</li>
+                        <li>Pork Liver Porridge</li>
+                        <li>Mixed Pork Organs Porridge</li>
+                        <li>Abalone Porridge</li>
+                        <li>Bird Nest Porridge</li>
+                        <li>Plain Porridge</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row menu-container">
+            <div class="col-lg-6 menu-text">
+                <div class="menu">
+                    <h3>Noodles</h3>
+                    <ul>
+                        <li>Wonton Noodles in Soup</li>
+                        <li>Wonton Flat Noodles in Soup</li>
+                        <li>Wonton Noodles</li>
+                        <li>Beef Stew Noodles in Soup</li>
+                        <li>Beef Stew Flat Noodles in Soup</li>
+                        <li>Beef Stew Noodles</li>
+                        <li>Fish Ball Noodles in Soup</li>
+                        <li>Fish Ball Flat Noodles in Soup</li>
+                        <li>Octopus Ball with Noodle in Soup</li>
+                        <li>Octopus Ball with Flat Noodle in Soup</li>
+                        <li>Dumpling Noodles in Soup</li>
+                        <li>Scallion with Ginger Noodles</li>
+                        <li>Abalone Noodles</li>
+                        <li>Wonton in Soup</li>
+                        <li>Dumpling in Soup</li>
+                        <li>Octopus Ball in Soup</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-image-container">
+                <div class="third-menu-image"></div>
+            </div>
+        </div>
+
+        <div class="row menu-container">
+            <div class="col-lg-6 menu-image-container">
+                <div class="fourth-menu-image"></div>
+            </div>
+            <div class="col-lg-6 menu-text">
+                <div class="menu dinner-Combo-menu">
+                    <h3>Dinner Combo</h3>
+                    <ul>
+                        <li>Stir Fried Chicken with Black Bean Sauce</li>
+                        <li>House Special Eggplant</li>
+                        <li>Pork Belly with Lotus Root in Red Bean Curd Sauce</li>
+                        <li>Stir Fried Chicken with Brocolli</li>
+                        <li>Mapo Tofu</li>
+                        <li>Stir Fried Beef with Ginger and Scllion</li>
+                        <li>Stir Fried Chicken with Cashew Nuts</li>
+                        <li>Stir Fried Beef with Bitter Melon</li>
+                        <li>Chicken Wing with Potato in Curry Sauce</li>
+                        <li>Stir Fried Spare Ribs with Bitter Melon</li>
+                        <li>Chicken Wings with Sand Ginger</li>
+                        <li>House Special Tofu</li>
+                        <li>Stir Fried Beef with Tomato</li>
+                        <li>Chicken Wings with Soy Sauce Glaze</li>
+                        <li>Braised Chicken with Ginger and Scallion</li>
+                        <li>Chicken Wings with Sugar Glazed</li>
+                        <li>Spare Ribs with Black Bean Garlic Sauce</li>
+                        <li>Beef Stew with Radish</li>
+                        <li>Chicken Wings with Potato in Black Pepper Sauce</li>
+                        <li>Pork Belly with Shrimp Paste Sauce</li>
+                        <li>Stir Fried Fish Filet with Black Bean and Garlic Sauce</li>
+                        <li>Stir Fried Fish Filet with Vegetables</li>
+                        <li>Stir Fried Vegetable</li>
+                        <li>Scrambled Egg with Shrimp and Chives</li>
+                        <li>Scrambled Egg with Beef</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row menu-container">
+            <div class="col-lg-6 menu-text">
+                <div class="menu">
+                    <h3>Beverages</h3>
+                    <ul>
+                        <li>Hong Kong Style Iced Coffee</li>
+                        <li>Hong Kong Style Iced Milk Tea</li>
+                        <li>Hong Kong Style Iced Lemon Tea</li>
+                        <li>Hong Kong Style Iced Milk Tea with Coffee (Yinyang)</li>
+                        <li>Hong Kong Style Hot Coffee</li>
+                        <li>Hong Kong Style Hot Milk Tea</li>
+                        <li>Hong Kong Style Hot Lemon Tea</li>
+                        <li>Hong Kong Style Hot Milk Tea with Coffee (Yinyang)</li>
+                        <li>Coca Cola(bottle)</li>
+                        <li>Fanta(bottle)</li>
+                        <li>Sprite(bottle)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 menu-image-container">
+                <div class="fifth-menu-image"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row footer">
+            <div class="col-md-4 order-md-1 order-1 footer-contents">
+              <button data-toggle="modal" data-target="#exampleModal">
+                ORDER NOW
+              </button>
+            </div>
+            <div class="col-md-4 order-md-2 order-3 footer-contents copyright">
+              <p>COPYRIGHT@CHANKEE 2020</p>
+            </div>
+            <div class="col-md-4 order-md-3 order-2 footer-contents social-icons">
+              <div>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- <section class="footer-container">
+                <div class="footer">
+
+                </div>
+            </section> -->
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -317,6 +317,16 @@ body .container .body-section-container .body-main-container .body-main .body-sl
   padding: 0;
 }
 
+body .container .body-section-container .body-main-container .body-main .body-slogan-container .slogon image {
+  display: block;
+}
+
+@media screen and (max-width: 580px) {
+  body .container .body-section-container .body-main-container .body-main .body-slogan-container .slogon image {
+    display: none;
+  }
+}
+
 body .container .body-section-container .body-main-container .body-main .order-button {
   width: 100%;
   margin: 0;
@@ -418,7 +428,7 @@ body .container .body-section-container .modal-content {
 
 body .container .body-section-container .modal-content .modal-body-container {
   text-align: center;
-  height: 400px;
+  min-height: 400px;
 }
 
 body .container .body-section-container .modal-content .modal-body-container .container-fluid .border-line {
@@ -431,79 +441,210 @@ body .container .body-section-container .modal-content .modal-body-container .co
   font-size: 1.1rem;
 }
 
-body .container .body-section-container .modal-content .modal-body-container .container-fluid div button {
+body .container .body-section-container .modal-content .modal-body-container .container-fluid div p {
+  margin: 0;
+}
+
+body .container .body-section-container .modal-content .modal-body-container .container-fluid div a {
   position: relative;
   margin: 0 auto;
+}
+
+body .container .body-section-container .modal-content .modal-body-container .container-fluid div a button {
   padding: 10px 40px;
 }
 
-body .container .body-section-container .second-section-container {
+body .container .body-section-container .intro-section-container {
   margin: 0;
   padding: 0;
-  height: 800px;
+  height: 100%;
+  min-height: 950px;
   background-color: #fff;
   z-index: 1;
 }
 
-body .container .body-section-container .second-section-container .second-section-text {
+body .container .body-section-container .intro-section-container .intro-text {
   margin: 0;
   padding: 0;
   height: 100%;
+  min-height: 950px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .body-section-container .intro-section-container .intro-text .intro {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+}
+
+body .container .body-section-container .intro-section-container .intro-text .intro h3 {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 700;
+}
+
+body .container .body-section-container .intro-section-container .intro-text .intro .text {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 600;
+  line-height: 2.2rem;
+  margin: 20px 0 40px;
+}
+
+body .container .body-section-container .intro-section-container .intro-text .intro .text span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+  body .container .body-section-container .intro-section-container .intro-text .intro .text {
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
+}
+
+body .container .body-section-container .intro-section-container .second-fourth-text {
   background: no-repeat url("../img/home-body-background.png");
   background-size: cover;
 }
 
-body .container .body-section-container .second-section-container .second-section-text p {
-  position: relative;
-  margin: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 80%;
-  line-height: 2rem;
-}
-
-body .container .body-section-container .second-section-container .second-section-image {
-  background: no-repeat url("../img/home_2.jpg") center center;
-  background-size: cover;
-}
-
-body .container .body-section-container .third-section-container {
+body .container .body-section-container .intro-section-container .third-fifth-text {
   margin: 0;
   padding: 0;
-  height: 800px;
-  background-color: #fff;
-  z-index: 1;
+  background-color: #8A372C;
 }
 
-body .container .body-section-container .third-section-container .third-section-text {
+body .container .body-section-container .intro-section-container .third-fifth-text .text {
+  color: #fff;
+}
+
+body .container .body-section-container .intro-section-container .section-image-container {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: #8A372C;
 }
 
-body .container .body-section-container .third-section-container .third-section-text p {
-  position: relative;
-  margin: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 80%;
-  line-height: 2rem;
-  color: #fff;
+body .container .body-section-container .intro-section-container .section-image-container div {
+  height: 100%;
+  min-height: 950px;
 }
 
-body .container .body-section-container .third-section-container .third-section-image {
-  background: no-repeat url("../img/home_3.jpg") center center;
-  background-size: cover;
+body .container .body-section-container .intro-section-container .section-image-container .second-section-image {
+  display: block;
+  background: no-repeat url("../img/home_2.jpg") 100% 100% fixed;
+  background-size: fill;
+}
+
+body .container .body-section-container .intro-section-container .section-image-container .third-section-image {
+  display: block;
+  background: no-repeat url("../img/home_5.jpg") 0% 100% fixed;
+  background-size: fill;
+}
+
+body .container .body-section-container .intro-section-container .section-image-container .fourth-section-image {
+  background: no-repeat url("../img/home_4.jpg") 100% 100% fixed;
+  background-size: fill;
+}
+
+body .container .body-section-container .intro-section-container .section-image-container .fifth-section-image {
+  display: block;
+  background: no-repeat url("../img/home_6.jpg") 0% 100% fixed;
+  background-size: fill;
+}
+
+@media screen and (max-width: 1500px) {
+  body .container .body-section-container .intro-section-container .section-image-container .second-section-image {
+    background: no-repeat url("../img/home_2.jpg") 200% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .third-section-image {
+    background: no-repeat url("../img/home_5.jpg") 0% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .fourth-section-image {
+    background: no-repeat url("../img/home_4.jpg") 200% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .fifth-section-image {
+    background: no-repeat url("../img/home_6.jpg") 0% 100% fixed;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  body .container .body-section-container .intro-section-container .section-image-container .second-section-image {
+    background: no-repeat url("../img/home_2.jpg") 350% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .third-section-image {
+    background: no-repeat url("../img/home_5.jpg") 0% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .fourth-section-image {
+    background: no-repeat url("../img/home_4.jpg") 350% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .fifth-section-image {
+    background: no-repeat url("../img/home_6.jpg") 0% 100% fixed;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  body .container .body-section-container .intro-section-container .section-image-container .second-section-image {
+    background: no-repeat url("../img/home_2.jpg") 450% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .third-section-image {
+    background: no-repeat url("../img/home_5.jpg") 0% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .fourth-section-image {
+    background: no-repeat url("../img/home_4.jpg") 450% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .fifth-section-image {
+    background: no-repeat url("../img/home_6.jpg") 0% 100% fixed;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body .container .body-section-container .intro-section-container .section-image-container .second-section-image {
+    background: no-repeat url("../img/home_2.jpg") -100% 100% fixed;
+    background-size: cover;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .third-section-image {
+    background: no-repeat url("../img/home_5.jpg") 0% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .fourth-section-image {
+    background: no-repeat url("../img/home_4.jpg") -100% 100% fixed;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .fifth-section-image {
+    background: no-repeat url("../img/home_6.jpg") 50% 100% fixed;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container .body-section-container .intro-section-container .section-image-container .second-section-image {
+    background: no-repeat url("../img/home_2.jpg") 60% 100% fixed;
+    background-size: cover;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .third-section-image {
+    background: no-repeat url("../img/home_5.jpg") 60% 100% fixed;
+    background-size: cover;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .fourth-section-image {
+    background: no-repeat url("../img/home_4.jpg") 60% 100% fixed;
+    background-size: cover;
+  }
+  body .container .body-section-container .intro-section-container .section-image-container .fifth-section-image {
+    display: none;
+  }
 }
 
 body .container .body-section-container .footer {
   position: relative;
+  bottom: 0;
   margin: 0;
   padding: 0;
-  height: 150px;
+  min-height: 150px;
   max-width: 1280px;
   background: no-repeat url("../img/footer-background.png");
   background-size: cover;
@@ -564,5 +705,22 @@ body .container .body-section-container .footer .social-icons div {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-right: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  body .container .body-section-container .footer .footer-contents {
+    text-align: center;
+  }
+  body .container .body-section-container .footer .footer-contents button {
+    margin: 20px 0;
+  }
+  body .container .body-section-container .footer .social-icons {
+    width: 80px;
+    position: relative;
+    margin: 20px auto;
+  }
+  body .container .body-section-container .footer .social-icons div {
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */
