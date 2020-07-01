@@ -304,24 +304,33 @@ body .container .modal-content .modal-body-container .container-fluid div a butt
   padding: 10px 40px;
 }
 
-body .container .menu-container {
+body .container .location-container {
   margin: 0;
   padding: 0;
+  min-height: 850px;
+  z-index: 1;
   background-color: #fff;
+}
+
+body .container .location-container .center-items {
+  min-height: 500px;
+  width: 80%;
+  position: relative;
+  top: 180px;
+  margin: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  z-index: 1;
+  border: 1px solid #ddd;
+  border-radius: 15px;
 }
 
-body .container .menu-container .menu-text {
+body .container .location-container .center-items .address-container {
   margin: 0;
   padding: 0;
-  height: 100%;
-  height: 950px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,141 +347,64 @@ body .container .menu-container .menu-text {
           align-items: center;
 }
 
-body .container .menu-container .menu-text .top-spacer {
-  top: 50px;
+body .container .location-container .center-items .address-container h3 {
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-body .container .menu-container .menu-text .menu {
-  position: relative;
-  width: 70%;
-  line-height: 2rem;
+body .container .location-container .center-items .address-container .store-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-body .container .menu-container .menu-text .menu li {
-  padding: 3px 0;
+body .container .location-container .center-items .address-container .store-info span {
+  font-size: 0.8rem;
+  margin: 3px 10px 0 0;
 }
 
-body .container .menu-container .menu-text .dinner-Combo-menu li {
-  padding: 0;
+body .container .location-container .center-items .address-container .store-info p {
+  line-height: 1.8rem;
 }
 
-@media screen and (max-width: 1200px) {
-  body .container .menu-container .menu-text .menu {
-    font-size: 0.9rem;
-    line-height: 1.8rem;
-  }
-}
-
-body .container .menu-container .menu-image-container {
+body .container .location-container .center-items .map-container {
   margin: 0;
   padding: 0;
-  max-width: 640px;
-}
-
-body .container .menu-container .menu-image-container div {
-  height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
 }
 
-body .container .menu-container .menu-image-container .first-menu-image {
-  position: relative;
-  right: 0;
-  background: no-repeat url("../img/menu_2_sq.jpg") 100% 100% fixed;
-  background-size: con;
+body .container .location-container .center-items .map-container div {
+  height: 400px;
+  width: 375px;
 }
 
-body .container .menu-container .menu-image-container .second-menu-image {
-  background: no-repeat url("../img/menu_1_sq.jpg") 0% 100% fixed;
-  background-size: fill;
-}
-
-body .container .menu-container .menu-image-container .third-menu-image {
-  background: no-repeat url("../img/menu_3_sq.jpg") 100% 100% fixed;
-  background-size: fill;
-}
-
-body .container .menu-container .menu-image-container .fourth-menu-image {
-  background: no-repeat url("../img/menu_5_sq.jpg") 0% 100% fixed;
-  background-size: fill;
-}
-
-body .container .menu-container .menu-image-container .fifth-menu-image {
-  background: no-repeat url("../img/menu_4_sq.jpg") 100% 100% fixed;
-  background-size: fill;
-}
-
-body .container .menu-container .menu-text-one {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-body .container .menu-container .menu-image-one {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-@media screen and (max-width: 992px) {
-  body .container .menu-container {
-    text-align: center;
+@media screen and (max-width: 1040px) {
+  body .container .location-container .center-items {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 3fr;
-        grid-template-rows: 1fr 3fr;
+    -ms-grid-rows: 1fr 2fr;
+        grid-template-rows: 1fr 2fr;
   }
-  body .container .menu-container .menu-text {
-    height: 650px;
-  }
-  body .container .menu-container .menu-text .menu {
-    width: 90%;
-  }
-  body .container .menu-container .menu-text .menu ul {
-    margin: 0;
-    padding: 0;
-  }
-  body .container .menu-container .menu-text .menu ul li {
-    list-style: none;
-  }
-  body .container .menu-container .long-list-spacer {
-    height: 950px;
-  }
-  body .container .menu-container .menu-image-container {
-    max-height: 400px;
-    min-width: 100%;
-  }
-  body .container .menu-container .menu-image-container .first-menu-image {
-    background: no-repeat url("../img/menu_2_sq.jpg") 100% 0% fixed;
-    background-size: contain;
-  }
-  body .container .menu-container .menu-image-container .second-menu-image {
-    background: no-repeat url("../img/menu_1_sq.jpg") 100% 0% fixed;
-    background-size: cover;
-  }
-  body .container .menu-container .menu-image-container .third-menu-image {
-    background: no-repeat url("../img/menu_3_sq.jpg") 100% 0% fixed;
-    background-size: cover;
-  }
-  body .container .menu-container .menu-image-container .fourth-menu-image {
-    background: no-repeat url("../img/menu_5_sq.jpg") 100% 0% fixed;
-    background-size: cover;
-  }
-  body .container .menu-container .menu-image-container .fifth-menu-image {
-    background: no-repeat url("../img/menu_4_sq.jpg") 100% 0% fixed;
-    background-size: cover;
-  }
-  body .container .menu-container .menu-text-one {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  body .container .menu-container .menu-text-one .top-spacer {
-    top: 0px;
-  }
-  body .container .menu-container .menu-image-one {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+}
+
+@media screen and (max-width: 560px) {
+  body .container .location-container .center-items {
+    width: 100%;
+    border: none;
   }
 }
 
@@ -595,4 +527,4 @@ body .container .footer .social-icons div {
     margin-right: 0;
   }
 }
-/*# sourceMappingURL=menu.css.map */
+/*# sourceMappingURL=location.css.map */
