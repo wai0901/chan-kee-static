@@ -458,6 +458,11 @@ body {
                             }
                         }
                     }
+                    @media screen and (max-width: 992px) {
+                        .intro-text {
+                            min-height: 700px;
+                        }
+                    }
                 }
                 .section-image-container {
                     @include margin-padding-zero;
@@ -469,12 +474,10 @@ body {
                         min-height: 950px;
                     }
                     .second-section-image { 
-                        display: block; 
                         background: no-repeat url('../img/home_2.jpg') 100% 100% fixed;
                         background-size: fill;
                     }
                     .third-section-image {
-                        display: block;
                         background: no-repeat url('../img/home_5.jpg') 0% 100% fixed;
                         background-size: fill;
                     }
@@ -483,28 +486,28 @@ body {
                         background-size: fill;
                     }
                     .fifth-section-image {
-                        display: block;
                         background: no-repeat url('../img/home_6.jpg') 0% 100% fixed;
                         background-size: fill;
                     }
                     @media screen and (max-width: 992px) {
+                        div {
+                            min-height: 450px;
+                        }
                         .second-section-image { 
-                            display: block; 
-                            background: no-repeat url('../img/home_2.jpg') center fixed;
+                            background: no-repeat url('../img/home_2.jpg') center 20%;
                             background-size: cover;
                         }
                         .third-section-image {
-                            display: block;
-                            background: no-repeat url('../img/home_5.jpg') center fixed;
+                            background: no-repeat url('../img/home_5.jpg') center;
                             background-size: cover;
                         }
                         .fourth-section-image {
-                            background: no-repeat url('../img/home_4.jpg') center fixed;
+                            background: no-repeat url('../img/home_4.jpg') center 20%;
                             background-size: cover;
                         }
                         .fifth-section-image {
                             min-height: 350px;
-                            background: no-repeat url('../img/home_6.jpg') center fixed;
+                            background: no-repeat url('../img/home_6.jpg') center;
                             background-size: cover;
                         }
                     }

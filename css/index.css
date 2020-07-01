@@ -611,6 +611,12 @@ body .container .body-section-container .intro-section-container .intro-text .in
   }
 }
 
+@media screen and (max-width: 992px) {
+  body .container .body-section-container .intro-section-container .intro-text .intro-text {
+    min-height: 700px;
+  }
+}
+
 body .container .body-section-container .intro-section-container .section-image-container {
   margin: 0;
   padding: 0;
@@ -625,13 +631,11 @@ body .container .body-section-container .intro-section-container .section-image-
 }
 
 body .container .body-section-container .intro-section-container .section-image-container .second-section-image {
-  display: block;
   background: no-repeat url("../img/home_2.jpg") 100% 100% fixed;
   background-size: fill;
 }
 
 body .container .body-section-container .intro-section-container .section-image-container .third-section-image {
-  display: block;
   background: no-repeat url("../img/home_5.jpg") 0% 100% fixed;
   background-size: fill;
 }
@@ -642,29 +646,29 @@ body .container .body-section-container .intro-section-container .section-image-
 }
 
 body .container .body-section-container .intro-section-container .section-image-container .fifth-section-image {
-  display: block;
   background: no-repeat url("../img/home_6.jpg") 0% 100% fixed;
   background-size: fill;
 }
 
 @media screen and (max-width: 992px) {
+  body .container .body-section-container .intro-section-container .section-image-container div {
+    min-height: 450px;
+  }
   body .container .body-section-container .intro-section-container .section-image-container .second-section-image {
-    display: block;
-    background: no-repeat url("../img/home_2.jpg") center fixed;
+    background: no-repeat url("../img/home_2.jpg") center 20%;
     background-size: cover;
   }
   body .container .body-section-container .intro-section-container .section-image-container .third-section-image {
-    display: block;
-    background: no-repeat url("../img/home_5.jpg") center fixed;
+    background: no-repeat url("../img/home_5.jpg") center;
     background-size: cover;
   }
   body .container .body-section-container .intro-section-container .section-image-container .fourth-section-image {
-    background: no-repeat url("../img/home_4.jpg") center fixed;
+    background: no-repeat url("../img/home_4.jpg") center 20%;
     background-size: cover;
   }
   body .container .body-section-container .intro-section-container .section-image-container .fifth-section-image {
     min-height: 350px;
-    background: no-repeat url("../img/home_6.jpg") center fixed;
+    background: no-repeat url("../img/home_6.jpg") center;
     background-size: cover;
   }
 }
