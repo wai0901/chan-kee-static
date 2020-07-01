@@ -659,7 +659,7 @@ body .container .body-section-container .intro-section-container .section-image-
     background-size: cover;
   }
   body .container .body-section-container .intro-section-container .section-image-container .third-section-image {
-    background: no-repeat url("../img/home_5.jpg") center;
+    background: no-repeat url("../img/home_5.jpg") center 20%;
     background-size: cover;
   }
   body .container .body-section-container .intro-section-container .section-image-container .fourth-section-image {
@@ -783,6 +783,9 @@ body .container .menu-container .menu-image-one {
 }
 
 @media screen and (max-width: 992px) {
+  body .container .first-menu-container {
+    padding-top: 100px;
+  }
   body .container .menu-container {
     text-align: center;
     -ms-grid-columns: 1fr;
@@ -811,23 +814,23 @@ body .container .menu-container .menu-image-one {
     min-width: 100%;
   }
   body .container .menu-container .menu-image-container .first-menu-image {
-    background: no-repeat url("../img/menu_2_sq.jpg") 100% 0% fixed;
-    background-size: contain;
+    background: no-repeat url("../img/menu_2_sq.jpg") 100% 20%;
+    background-size: cover;
   }
   body .container .menu-container .menu-image-container .second-menu-image {
-    background: no-repeat url("../img/menu_1_sq.jpg") 100% 0% fixed;
+    background: no-repeat url("../img/menu_1_sq.jpg") 100% 20%;
     background-size: cover;
   }
   body .container .menu-container .menu-image-container .third-menu-image {
-    background: no-repeat url("../img/menu_3_sq.jpg") 100% 0% fixed;
+    background: no-repeat url("../img/menu_3_sq.jpg") 100% 20%;
     background-size: cover;
   }
   body .container .menu-container .menu-image-container .fourth-menu-image {
-    background: no-repeat url("../img/menu_5_sq.jpg") 100% 0% fixed;
+    background: no-repeat url("../img/menu_5_sq.jpg") 100% 20%;
     background-size: cover;
   }
   body .container .menu-container .menu-image-container .fifth-menu-image {
-    background: no-repeat url("../img/menu_4_sq.jpg") 100% 0% fixed;
+    background: no-repeat url("../img/menu_4_sq.jpg") 100% 20%;
     background-size: cover;
   }
   body .container .menu-container .menu-text-one {

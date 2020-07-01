@@ -498,7 +498,7 @@ body {
                             background-size: cover;
                         }
                         .third-section-image {
-                            background: no-repeat url('../img/home_5.jpg') center;
+                            background: no-repeat url('../img/home_5.jpg') center 20%;
                             background-size: cover;
                         }
                         .fourth-section-image {
@@ -599,6 +599,9 @@ body {
             }
         }
         @media screen and (max-width: 992px) {
+            .first-menu-container {
+                padding-top: 100px;
+            }
             .menu-container { 
                 text-align: center;
                 grid-template-columns: 1fr;
@@ -622,27 +625,27 @@ body {
                     max-height: 400px;
                     min-width: 100%;
                     .first-menu-image {
-                        background: no-repeat url('../img/menu_2_sq.jpg') 100% 0% fixed;
-                        background-size: contain;
+                        background: no-repeat url('../img/menu_2_sq.jpg') 100% 20%;
+                        background-size: cover;
                     }
                     .second-menu-image {
     
-                        background: no-repeat url('../img/menu_1_sq.jpg') 100% 0% fixed;
+                        background: no-repeat url('../img/menu_1_sq.jpg') 100% 20%;
                         background-size: cover;
                     }
                     .third-menu-image {
     
-                        background: no-repeat url('../img/menu_3_sq.jpg') 100% 0% fixed;
+                        background: no-repeat url('../img/menu_3_sq.jpg') 100% 20%;
                         background-size: cover;
                     }
                     .fourth-menu-image {
     
-                        background: no-repeat url('../img/menu_5_sq.jpg') 100% 0% fixed;
+                        background: no-repeat url('../img/menu_5_sq.jpg') 100% 20%;
                         background-size: cover;
                     }
                     .fifth-menu-image {
     
-                        background: no-repeat url('../img/menu_4_sq.jpg') 100% 0% fixed;
+                        background: no-repeat url('../img/menu_4_sq.jpg') 100% 20%;
                         background-size: cover;
                     }
                 }
