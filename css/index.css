@@ -256,6 +256,12 @@ body .container .header-container .header .background-image .lang-button button:
   background-color: #65261E;
 }
 
+@media screen and (max-width: 890px) {
+  body .container .header-container .header .background-image .header-navbar .header-links {
+    margin: 20px 15px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   body .container .header-container .header .background-image .header-navbar .header-links a {
     font-size: 1.2rem;

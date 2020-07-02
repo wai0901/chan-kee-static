@@ -191,6 +191,13 @@ body {
                             background-color: $langButtonBackgroundHover;
                         }
                     }
+                    @media screen and (max-width: 890px) {
+                        .header-navbar {
+                            .header-links {
+                                margin: 20px 15px;
+                            }
+                        }
+                    }
     
                     @media screen and (max-width: 767px) {
                         .header-navbar {
