@@ -229,6 +229,9 @@ body {
                 text-align: center;
                 min-height: 400px;
                 .container-fluid {
+                    .close-button {
+                        position: absolute;
+                    }
                     .border-line {
                         border-bottom: 1px solid #bbb;
                     }

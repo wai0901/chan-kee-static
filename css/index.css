@@ -287,6 +287,10 @@ body .container .modal-content .modal-body-container {
   min-height: 400px;
 }
 
+body .container .modal-content .modal-body-container .container-fluid .close-button {
+  position: absolute;
+}
+
 body .container .modal-content .modal-body-container .container-fluid .border-line {
   border-bottom: 1px solid #bbb;
 }
