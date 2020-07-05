@@ -1,0 +1,93 @@
+$langButtonBackground: #8D392F;
+$langButtonBackgroundHover: #65261E;
+$langButtonText: #fff;
+$orderButtonBackground: #ffc609;
+$orderButtonBackgroundHover: #ce9f06;
+$orderButtonText: #3a3a3a;
+$headerMenuLink: #3a3a3a;
+$headerMenuLinkHover: #8D392F;
+$socialIconsButton: #3a3a3a;
+$socialIconsButtonHover: #6e6e6e;
+$bugerMenuColor: #8D392F;
+
+
+@mixin background-cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin margin-padding-zero {
+    margin: 0;
+    padding: 0;
+}
+
+//Location Page
+.location-container {
+    @include margin-padding-zero;
+    min-height: 850px;
+    z-index: 1;
+    background-color: #fff;
+    .center-items {
+        min-height: 500px;
+        width: 80%;
+        position: relative;
+        top: 180px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        .address-container {
+            @include margin-padding-zero;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .store-info {
+                display: flex;
+                span {
+                    font-size: 0.8rem;
+                    margin: 3px 10px 0 0;
+                }
+                p {
+                    line-height: 1.8rem;
+                }
+            }
+        }
+        .map-container {
+            @include margin-padding-zero;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            div {
+                height: 400px;
+                width: 375px;
+            }
+        }
+    }
+    @media screen and (max-width: 1040px) {
+        .center-items {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr;
+            
+        }
+    }
+    @media screen and (max-width: 560px) {
+        .center-items {
+            width: 100%;
+            border: none;
+            
+        }
+    }
+}

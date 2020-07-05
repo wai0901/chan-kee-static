@@ -1,0 +1,79 @@
+$langButtonBackground: #8D392F;
+$langButtonBackgroundHover: #65261E;
+$langButtonText: #fff;
+$orderButtonBackground: #ffc609;
+$orderButtonBackgroundHover: #ce9f06;
+$orderButtonText: #3a3a3a;
+$headerMenuLink: #3a3a3a;
+$headerMenuLinkHover: #8D392F;
+$socialIconsButton: #3a3a3a;
+$socialIconsButtonHover: #6e6e6e;
+$bugerMenuColor: #8D392F;
+
+
+@mixin background-cover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin margin-padding-zero {
+    margin: 0;
+    padding: 0;
+}
+
+//About Page
+.about-container {
+    @include margin-padding-zero;
+    position: relative;
+    height: auto;
+    min-height: 1050px;
+    z-index: 1;
+    background-color: #fff;
+    padding-bottom: 20px;
+    
+    .about-contents {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 220px;
+        div {
+            text-align: center;
+            margin-bottom: 20px;
+            h3 {
+                font-weight: 900;
+            }
+        }
+        .paragraph {
+            margin-top: 50px;
+        }
+        p {
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 2.2rem;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .about-contents {
+            width: 80%;
+            p {
+                line-height: 2rem;
+            }
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .about-contents {
+            width: 85%;
+            top: 170px;
+            div {
+                h3 {
+                    font-size: 1.5rem;
+                }
+            }
+            p {
+                font-size: 0.8rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}
