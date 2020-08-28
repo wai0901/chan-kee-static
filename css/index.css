@@ -241,15 +241,18 @@ body .container .header-container .header .background-image .lang-button button 
   margin: 0;
   min-width: 80px;
   padding: 8px 0;
-  text-decoration: none;
   outline: none;
   border-radius: 6px;
   border: none;
   background-color: #8D392F;
-  color: #fff;
   font-size: 0.9rem;
   font-weight: bold;
   font-family: 'Noto Sans TC', sans-serif;
+}
+
+body .container .header-container .header .background-image .lang-button button a {
+  color: #fff;
+  text-decoration: none;
 }
 
 body .container .header-container .header .background-image .lang-button button:hover {

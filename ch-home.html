@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chan Kee</title>
+    <title>陳記</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
@@ -14,7 +14,6 @@
         href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;600;700&family=Noto+Sans+TC:wght@400;700;900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/location.css" />
 </head>
 
 <body>
@@ -41,20 +40,20 @@
                             id="navbarNav">
                             <ul class="navbar-nav mt-md-3 mt-5 mb-md-0 mb-5 mx-auto text-md-center text-left">
                                 <li class="nav-item header-links">
-                                    <a class="nav-link" href="index.html">home</a>
+                                    <a class="nav-link" href="#">主頁</a>
                                 </li>
                                 <li class="nav-item header-links">
                                     <a class="nav-link" href="#" data-toggle="modal"
-                                        data-target="#exampleModal">order</a>
+                                        data-target="#exampleModal">線上訂餐</a>
                                 </li>
                                 <li class="nav-item header-links">
-                                    <a class="nav-link" href="menu.html">menu</a>
+                                    <a class="nav-link" href="ch-menu.html">菜單</a>
                                 </li>
                                 <li class="nav-item header-links">
-                                    <a class="nav-link" href="#">location</a>
+                                    <a class="nav-link" href="ch-location.html">地址</a>
                                 </li>
                                 <li class="nav-item header-links">
-                                    <a class="nav-link" href="about.html">about</a>
+                                    <a class="nav-link" href="ch-about.html">關於我們</a>
                                 </li>
                             </ul>
                         </div>
@@ -62,7 +61,7 @@
 
                     <!-- Chan Kee logo -->
                     <div class="header-logo">
-                        <a href="index.html">
+                        <a href="#">
                             <svg width="56px" height="58px" href="#">
                                 <image xlink:href="img/chan_kee_header_logo.svg" x="0" y="0" width="56px" height="58px">
                                 </image>
@@ -72,15 +71,73 @@
 
                     <!-- language button -->
                     <div class="lang-button">
-                        <button><a href="ch-location.html" >中文</a></button>
+                        <button><a href="index.html" >English</a></button>
                     </div>
                 </div>
             </div>
         </section>
         <!-- <-- header-container -->
 
-        <!-- Modal -->
+        <!-- Body contents -->
         <section class="body-section-container">
+            <div class="body-main-container">
+                <div class="body-main">
+                    <!-- red screen for the background -->
+                    <div class="red-screen"></div>
+
+                    <!-- congee image at the background -->
+                    <div class="body-congee-container">
+                        <div class="body-congee"></div>
+                    </div>
+
+                    <!-- the slogan contents -->
+                    <div class="row body-slogan-container">
+
+                        <!-- background slogon for mobile size -->
+                        <div class="slogon-background slogon-background-left">
+                            <svg width="95px" height="330px" href="#">
+                                <image xlink:href="img/slogon_left_background.svg" x="0" y="0" width="95px" height="330px"></image>
+                            </svg>
+                        </div>
+                        <div class="slogon-background slogon-background-right">
+                            <svg width="95px" height="330px" href="#">
+                                <image xlink:href="img/slogon_right_background.svg" x="0" y="0" width="95px" height="330px">
+                                </image>
+                            </svg>
+                        </div>
+
+                        <!-- slogon -->
+                        <div class="col-lg-5 col-sm-4 col-1 slogon">
+                            <svg width="95px" height="330px" href="#">
+                                <image xlink:href="img/slogon_left.svg" x="0" y="0" width="95px" height="330px"></image>
+                            </svg>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 col-10 logo">
+                            <svg width="195px" height="200px" href="#">
+                                <image xlink:href="img/chan_kee_body_logo.svg" x="0" y="0" width="195px" height="200px">
+                                </image>
+                            </svg>
+                        </div>
+                        <div class="col-lg-5 col-sm-4 col-1 slogon">
+                            <svg width="95px" height="330px" href="#">
+                                <image xlink:href="img/slogon_right.svg" x="0" y="0" width="95px" height="330px">
+                                </image>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- order button -->
+                    <div class="row order-button">
+                        <button class="col-2" style="outline: none;" type="button" data-toggle="modal"
+                            data-target="#exampleModal">
+                            訂餐
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- <-- body-main-container -->
+
+            <!-- Modal -->
             <div class="modal fade modal-container" id="exampleModal" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -93,17 +150,17 @@
                                     </a>
                                 </div>
                                 <div class="row">
-                                    <p class="col mt-4 mb-3 font-style">PICKUP AT STORE</p>
+                                    <p class="col mt-4 mb-3 font-style">店內取餐</p>
                                 </div>
                                 <div class="row pb-5 border-line">
                                     <a href="https://the.ordering.app/" target="_blank">
                                         <button class="btn btn-danger btn-lg font-style">
-                                            ORDER PICKUP
+                                            線上訂餐, 店內取餐
                                         </button>
                                     </a>
                                 </div>
                                 <div class="row mt-5">
-                                    <p class="col font-style">DELIVERY:</p>
+                                    <p class="col font-style">送餐服務:</p>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-md-6">
@@ -148,41 +205,70 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- menu section -->
-        <div class="location-container">
-            <div class="center-items">
-                <div class="address-container">
-                    <div>
-                        <h3>CHAN KEE</h3>
-                        <div class="store-info">
-                            <span><i class="fas fa-phone"></i></span>
-                            <p>909.468.0748</p>
-                        </div>
-                        <div class="store-info">
-                            <span><i class="fas fa-map-marker-alt"></i></span>
-                            <p>20627 Golden Springs Drive, Ste E<br />Diamond Bar, CA 91789</p>
-                        </div>
-                    </div>
+            <!-- 2nd section -->
+            <div class="intro-section-container">
+                <div class="section-image-container">
+                    <div class="second-section-image"></div>
                 </div>
-                <div class="map-container">
-                    <div>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.822826219018!2d-117.85732758440724!3d33.997084328081485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32bd4773778e9%3A0x887f4fa13c397baf!2sChan%20Kee!5e0!3m2!1sen!2sus!4v1593555603539!5m2!1sen!2sus"
-                            width="375" height="400" frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
+                <div class="intro-text">
+                    <div class="intro">
+                        <h3>粥的歷史</h3>
+                        <p class="text">
+                            粥粉麵飯是中國人的傳統飲食文化，淵源悠長尢其是粥可說是更加歷史悠久、最早食粥的人可能是皇帝，有史書記載 ＂皇帝好烹榖為?粥＂，因為當時的陶器如＂鬲＂＂釜＂等只能煮流質食物，而主要原料是谷米煮成的便是粥，而早在新石器時代的龍山文化遺址發現了用來煮食的工具＂蒂＂，粥字本寫作＂鬻＂極似龍山文化時期所用陶器炊具＂鬲＂中放米烹煮。由此可見我們的祖先在數千年前已懂得煮粥了。 
+                        </p>
+                        <p class="text">
+                            古人煮粥與養生健康醫療相結合。史記記載西漢名醫涥于意＂以火齊粥且欴＂為齊王治療疾病.在很多醫書中記載以高梁米粥治蛇傷，以加熱石塊煮米粥治肛門瘙痕，敦煌石窟殘卷本也有＂茗粥＂＂柿粥＂＂秦椒粥＂＂蜀椒粥＂等記載以治不同的疾病。 
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <!-- 3rd section -->
+            <div class="intro-section-container">
+                <div class="section-image-container">
+                    <div class="third-section-image"></div>
+                </div>
+                <div class="intro-text">
+                    <div class="intro">
+                        <p class="text">
+                            到魏晉南北朝，由於民族大遷移以逃避戰禍，中原人士帶着煮粥的文化遷徙到南方，由於當時農耕技術不成熟，糧食產量少，一般民眾因米糧不足，於是用米加水來煮成米糊，使更多人吃得飽，史書也有記載，每當發生災難或瘟疫，當時官府或富豪都會用＂施粥＂來救濟災民，成為一種慈善的手段。 
+                        </p>
+                        <p class="text">
+                            但到了宋朝之後，食粥已不是窮困人家及災民的救濟品，很多名人達官也趨之若鶩了，如蘇軾吃了豆漿中滲入無錫貢米熬煮的粥而寫下豆粥一詩，云＂身心顛倒不自知，更知人間有真味，南宋陸游也寫了食粥＂世人個個學長年，不信長年在目前，我得宛上平易法，只將食粥致神仙＂  
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4th section -->
+            <div class="intro-section-container">
+                <div class="section-image-container second-fourth-image">
+                    <div class="fourth-section-image"></div>
+                </div>
+                <div class="intro-text">
+                    <div class="intro">
+                        <p class="text">
+                            <span>＂世人個個學長年<br />
+                                不信長年在目前，<br />
+                                我得宛上平易法，<br />
+                                只將食粥致神仙＂</span><br />
+                        </p>
+                        <p class="text">
+                            明代名醫李時珍收錄大量的粥膳方，因此用粥品來治病養生已經很普遍了。淸朝曹庭棟作＂養生隨筆＂可見粥品已廣受民眾的重視了  <br />
+                            <a href="http://www.mychistory.com/2-1012/">點擊這裡查看更多信息</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
         <!-- Footer -->
         <div class="footer">
             <div class="footer-contents">
                 <button data-toggle="modal" data-target="#exampleModal">
-                    ORDER NOW
+                    線上訂餐
                 </button>
             </div>
             <div class="footer-contents copyright">

@@ -176,16 +176,17 @@ body {
                             margin: 0;
                             min-width: 80px;
                             padding: 8px 0;
-                            text-decoration: none;
                             outline: none;
                             border-radius: 6px;
                             border: none;
                             background-color: $langButtonBackground;
-                            color: $langButtonText;
                             font-size: 0.9rem;
                             font-weight: bold;
                             font-family: 'Noto Sans TC', sans-serif;
-                            
+                            a {
+                                color: $langButtonText;
+                                text-decoration: none;
+                            }
                         }
                         button:hover {
                             background-color: $langButtonBackgroundHover;
