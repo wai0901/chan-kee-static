@@ -686,6 +686,10 @@ body .container .body-section-container .intro-section-container .section-image-
   }
 }
 
+body .container .body-section-container .intro-section-container .last-section-image-contiainer {
+  overflow: hidden;
+}
+
 body .container .footer {
   position: relative;
   bottom: 0;
