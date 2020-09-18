@@ -38,11 +38,24 @@
 
 .menu-container .menu-text .menu {
   position: relative;
-  width: 70%;
+  width: 60%;
   line-height: 2rem;
 }
 
-.menu-container .menu-text .menu li {
+.menu-container .menu-text .menu .menu-section-divider {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.menu-container .menu-text .menu .menu-section-divider .menu-items {
+  text-align: left;
+}
+
+.menu-container .menu-text .menu .menu-section-divider .menu-items li {
   padding: 3px 0;
 }
 
@@ -179,6 +192,14 @@
   }
   .menu-container .menu-text .menu {
     width: 90%;
+  }
+  .menu-container .menu-text .menu .menu-section-divider .menu-items {
+    text-align: center;
+  }
+  .menu-container .menu-text .menu .menu-section-divider .menu-items-english li {
+    padding: 9px 0;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
   }
   .menu-container .menu-text .menu ul {
     margin: 0;

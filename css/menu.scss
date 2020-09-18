@@ -46,10 +46,18 @@ $bugerMenuColor: #8D392F;
         }
         .menu {
             position: relative;
-            width: 70%;
+            width: 60%;
             line-height: 2rem;
-            li {
-                padding: 3px 0;
+            .menu-section-divider {
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 1fr;
+                .menu-items {
+                    text-align: left;
+                    li {
+                        padding: 3px 0;
+                    }
+                }
             }
         }
         .dinner-combo-menu {
@@ -158,6 +166,18 @@ $bugerMenuColor: #8D392F;
             height: 650px;
             .menu {
                 width: 90%;
+                .menu-section-divider {
+                    .menu-items {
+                        text-align: center
+                    }
+                    .menu-items-english {
+                        li {
+                            padding: 9px 0;
+                            font-size: 0.8rem;
+                            line-height: 1.2rem;
+                        }
+                    }
+                }
                 ul {
                     @include margin-padding-zero;
                     li {
